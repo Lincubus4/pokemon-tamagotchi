@@ -1,8 +1,24 @@
 # 🎮 Pokémon Tamagotchi
 
-Una aplicación web de Tamagotchi virtual inspirada en Pokémon, construida con HTML5 Canvas, JavaScript vanilla y PokéAPI.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Made with JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-f7df1e.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Vite](https://img.shields.io/badge/Vite-5.0+-646CFF.svg?logo=vite)](https://vitejs.dev/)
+[![PokéAPI](https://img.shields.io/badge/Powered%20by-Pok%C3%A9API-EF5350.svg)](https://pokeapi.co/)
+[![GitHub Pages](https://img.shields.io/badge/Demo-GitHub%20Pages-222222.svg?logo=github)](https://lincubus4.github.io/pokemon-tamagotchi/)
+
+> Un Tamagotchi virtual inspirado en Pokémon, construido con HTML5 Canvas, JavaScript vanilla y PokéAPI. Cuida tu Pokémon, aliméntalo, juega con él y observa cómo evoluciona.
 
 ![Pokémon Tamagotchi](https://img.shields.io/badge/Pok%C3%A9mon-Tamagotchi-ffcb05?style=for-the-badge&logo=pokemon)
+
+---
+
+---
+
+## 🎯 Demo en Vivo
+
+**[👉 Prueba el juego aquí](https://lincubus4.github.io/pokemon-tamagotchi/)**
+
+![Screenshot Placeholder](https://via.placeholder.com/600x400/ffcb05/003a70?text=Pokemon+Tamagotchi+Screenshot)
 
 ## 🌟 Características
 
@@ -137,9 +153,58 @@ En la función `render()` de `app.js`, añade nuevos casos al switch de `animati
 
 ## 📜 Créditos
 
-- **PokéAPI**: https://pokeapi.co/ - API de Pokémon
-- **Sprites**: The Pokémon Company / Game Freak
-- **Inspiración**: PokeDeskBuddy (https://github.com/redromnon/poke-deskbuddy)
+### 🙏 Inspiración y Referencias
+
+Este proyecto fue inspirado y se basó en los siguientes recursos:
+
+#### **Proyecto Base**
+- **[PokeDeskBuddy](https://github.com/redromnon/poke-deskbuddy)** por [@redromnon](https://github.com/redromnon)
+  - Concepto de mascota Pokémon interactiva de escritorio
+  - Lógica de sprites y animaciones básicas
+  - Sistema de estados y comportamientos
+
+#### **APIs y Recursos**
+- **[PokéAPI](https://pokeapi.co/)** - Base de datos completa de Pokémon
+  - Sprites oficiales (Gen 1-9)
+  - Datos de tipos, evoluciones y estadísticas
+  - Cadenas de evolución
+  - [Documentación oficial](https://pokeapi.co/docs/v2)
+
+#### **Tecnologías y Librerías**
+- **[Vite](https://vitejs.dev/)** - Build tool ultrarrápido por [@Evan You](https://github.com/yyx990803)
+- **[LocalForage](https://localforage.github.io/localForage/)** - Storage mejorado por [@Mozilla](https://github.com/localForage/localForage)
+- **[Google Fonts - Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P)** - Fuente pixel retro
+
+#### **Inspiración de Diseño**
+- **Tamagotchi Original** (1996) - Bandai
+- **Game Boy Classic** - Diseño de pantalla monocromo verde
+- **Pokémon Red/Blue/Yellow** (1996-1998) - Sprites pixel art Gen 1
+
+### 📦 Repositorios Relacionados
+
+Otros proyectos similares que nos inspiraron:
+- [pokegotchi](https://github.com/PierreRambaud/pokegotchi) - Tamagotchi Pokémon en C con LVGL
+- [7daysofcodeTamagotchi](https://github.com/sspacecoding/7daysofcodeTamagotchi) - Implementación en C#
+
+### 🎨 Assets y Contenido
+
+- **Sprites Pokémon**: © The Pokémon Company, Nintendo, Game Freak
+- **Concepto Tamagotchi**: © Bandai
+- **Emojis**: Unicode Consortium / Sistema operativo
+- **Código fuente**: MIT License (ver [LICENSE](LICENSE))
+
+### ⚠️ Disclaimer
+
+Este es un proyecto de fan art no oficial y **no está afiliado, respaldado o asociado** con:
+- The Pokémon Company
+- Nintendo
+- Game Freak
+- Creatures Inc.
+- Bandai
+
+Pokémon y Tamagotchi son marcas registradas de sus respectivos propietarios. Este proyecto es únicamente para fines educativos y de entretenimiento personal.
+
+---
 
 ## 📄 Licencia
 
