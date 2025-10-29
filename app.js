@@ -185,9 +185,11 @@ function updatePokemonTypes(types) {
 
 async function loadSprite(data) {
     return new Promise((resolve, reject) => {
-        const spriteUrl = data.sprites.front_default || 
-                         data.sprites.other['official-artwork']?.front_default ||
-                         data.sprites.other.home?.front_default;
+        // Priorizar sprites pixel art pequeños
+        const spriteUrl = data.sprites.versions?.['generation-v']?.['black-white']?.animated?.front_default ||
+                         data.sprites.versions?.['generation-v']?.['black-white']?.front_default ||
+                         data.sprites.front_default ||
+                         data.sprites.other['official-artwork']?.front_default;
         
         if (!spriteUrl) {
             reject(new Error('No sprite disponible'));
@@ -261,8 +263,8 @@ function render() {
             break;
     }
     
-    // Dibujar sprite
-    const spriteSize = 128;
+    // Dibujar sprite (más pequeño, estilo Tamagotchi)
+    const spriteSize = 80;
     ctx.drawImage(
         currentSprite,
         -spriteSize / 2,
@@ -273,8 +275,8 @@ function render() {
     
     // Dibujar estado de sueño
     if (gameState.isSleeping) {
-        ctx.font = '40px Arial';
-        ctx.fillText('💤', 40, -60);
+        ctx.font = '24px Arial';
+        ctx.fillText('💤', 30, -40);
     }
     
     ctx.restore();
