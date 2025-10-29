@@ -154,38 +154,32 @@ header h1 {
 }
 
 .stats-container {
-    margin-bottom: 15px;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 10px;
-    border-radius: 10px;
+    margin-bottom: 10px;
+    background: transparent;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .stat {
-    margin-bottom: 8px;
     display: flex;
     align-items: center;
-    gap: 8px;
-}
-
-.stat label {
-    font-size: 8px;
-    color: var(--text-light);
-    min-width: 80px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
+    gap: 6px;
 }
 
 .stat-icon {
-    font-size: 12px;
+    font-size: 14px;
     display: inline-block;
+    width: 20px;
+    text-align: center;
 }
 
 .progress-bar {
-    height: 16px;
+    height: 12px;
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 8px;
+    border-radius: 6px;
     overflow: hidden;
     position: relative;
     flex: 1;
@@ -210,17 +204,24 @@ header h1 {
     background: linear-gradient(90deg, #6bcf7f 0%, #8fdb9d 100%);
 }
 
-.stat span {
-    font-size: 8px;
-    text-align: right;
-    min-width: 30px;
+.external-controls {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.selector {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 8px;
 }
 
 .controls {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
-    margin-bottom: 15px;
+    padding: 10px 0;
 }
 
 .btn {
@@ -259,13 +260,7 @@ header h1 {
 }
 
 .btn span:first-child {
-    font-size: 18px;
-}
-
-.btn span:last-child {
-    font-size: 6px;
-    line-height: 1.2;
-    text-align: center;
+    font-size: 20px;
 }
 
 .btn-feed {
@@ -309,6 +304,8 @@ header h1 {
     padding: 8px 12px;
     font-size: 7px;
     border-radius: 8px;
+    min-height: auto;
+    aspect-ratio: auto;
 }
 
 .btn-search {
@@ -384,9 +381,9 @@ header h1 {
         gap: 5px;
     }
     
-    .stat label {
-        font-size: 7px;
-        min-width: 70px;
+    .stat-icon {
+        font-size: 12px;
+        width: 18px;
     }
     
     .controls {
@@ -399,16 +396,16 @@ header h1 {
     }
     
     .btn span:first-child {
-        font-size: 16px;
-    }
-    
-    .btn span:last-child {
-        font-size: 5px;
+        font-size: 18px;
     }
     
     .selector {
         grid-template-columns: 1fr;
         gap: 6px;
+    }
+    
+    .external-controls {
+        padding: 10px;
     }
 }
 

@@ -19,56 +19,50 @@
             <div class="pokemon-info">
                 <h2 id="pokemonName">Cargando...</h2>
                 <div id="pokemonTypes" class="types"></div>
-                <p id="pokemonLevel">Nivel: 1</p>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat">
+                    <span class="stat-icon">🍖</span>
+                    <div class="progress-bar">
+                        <div id="hungerBar" class="progress-fill hunger"></div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">😊</span>
+                    <div class="progress-bar">
+                        <div id="happinessBar" class="progress-fill happiness"></div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">⚡</span>
+                    <div class="progress-bar">
+                        <div id="energyBar" class="progress-fill energy"></div>
+                    </div>
+                </div>
             </div>
 
             <div class="canvas-container">
                 <canvas id="gameCanvas" width="300" height="200"></canvas>
             </div>
 
-            <div class="stats-container">
-                <div class="stat">
-                    <label><span class="stat-icon">❤️</span> Hambre</label>
-                    <div class="progress-bar">
-                        <div id="hungerBar" class="progress-fill hunger"></div>
-                    </div>
-                    <span id="hungerValue">100</span>
-                </div>
-                <div class="stat">
-                    <label><span class="stat-icon">😊</span> Feliz</label>
-                    <div class="progress-bar">
-                        <div id="happinessBar" class="progress-fill happiness"></div>
-                    </div>
-                    <span id="happinessValue">100</span>
-                </div>
-                <div class="stat">
-                    <label><span class="stat-icon">⚡</span> Energía</label>
-                    <div class="progress-bar">
-                        <div id="energyBar" class="progress-fill energy"></div>
-                    </div>
-                    <span id="energyValue">100</span>
-                </div>
-            </div>
-
             <div class="controls">
                 <button id="feedBtn" class="btn btn-feed">
                     <span>🍖</span>
-                    <span>Feed</span>
                 </button>
                 <button id="playBtn" class="btn btn-play">
-                    <span>�</span>
-                    <span>Play</span>
+                    <span>🎮</span>
                 </button>
                 <button id="sleepBtn" class="btn btn-sleep">
                     <span>💤</span>
-                    <span>Sleep</span>
                 </button>
                 <button id="resetBtn" class="btn btn-reset">
                     <span>🔄</span>
-                    <span>New</span>
                 </button>
             </div>
+        </div>
 
+        <div class="external-controls">
             <div class="selector">
                 <input type="text" id="pokemonSearch" placeholder="Buscar Pokémon...">
                 <button id="searchBtn" class="btn btn-search">Buscar</button>

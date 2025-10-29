@@ -118,17 +118,11 @@ async function saveGameState() {
 function updateUI() {
     // Actualizar barras de stats
     document.getElementById('hungerBar').style.width = `${gameState.hunger}%`;
-    document.getElementById('hungerValue').textContent = Math.round(gameState.hunger);
-    
     document.getElementById('happinessBar').style.width = `${gameState.happiness}%`;
-    document.getElementById('happinessValue').textContent = Math.round(gameState.happiness);
-    
     document.getElementById('energyBar').style.width = `${gameState.energy}%`;
-    document.getElementById('energyValue').textContent = Math.round(gameState.energy);
     
     // Actualizar info del Pokémon
     document.getElementById('pokemonName').textContent = gameState.name;
-    document.getElementById('pokemonLevel').textContent = `Nivel: ${gameState.level}`;
     
     // Verificar game over
     if (gameState.hunger <= 0 || gameState.happiness <= 0 || gameState.energy <= 0) {
