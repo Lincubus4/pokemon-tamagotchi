@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Tamagotchi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/pokemon-tamagotchi/assets/index-L86jgE6c.js"></script>
+  <link rel="stylesheet" crossorigin href="/pokemon-tamagotchi/assets/index-KIJJ_TRK.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Pokémon Tamagotchi 🎮</h1>
+        </header>
+
+        <div class="game-screen">
+            <div class="pokemon-info">
+                <h2 id="pokemonName">Cargando...</h2>
+                <div id="pokemonTypes" class="types"></div>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat">
+                    <span class="stat-icon">🍖</span>
+                    <div class="progress-bar">
+                        <div id="hungerBar" class="progress-fill hunger"></div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">😊</span>
+                    <div class="progress-bar">
+                        <div id="happinessBar" class="progress-fill happiness"></div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">⚡</span>
+                    <div class="progress-bar">
+                        <div id="energyBar" class="progress-fill energy"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="canvas-container">
+                <canvas id="gameCanvas" width="300" height="200"></canvas>
+            </div>
+
+            <div class="controls">
+                <button id="feedBtn" class="btn btn-feed">
+                    <span>🍖</span>
+                </button>
+                <button id="playBtn" class="btn btn-play">
+                    <span>🎮</span>
+                </button>
+                <button id="sleepBtn" class="btn btn-sleep">
+                    <span>💤</span>
+                </button>
+                <button id="resetBtn" class="btn btn-reset">
+                    <span>🔄</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="external-controls">
+            <div class="selector">
+                <input type="text" id="pokemonSearch" placeholder="Buscar Pokémon...">
+                <button id="searchBtn" class="btn btn-search">Buscar</button>
+                <button id="randomBtn" class="btn btn-random">Aleatorio</button>
+            </div>
+        </div>
+
+        <div id="gameOverScreen" class="game-over hidden">
+            <h2>¡Tu Pokémon se ha desmayado!</h2>
+            <p>Cuida mejor a tu próximo compañero</p>
+            <button id="restartBtn" class="btn btn-large">Reintentar</button>
+        </div>
+
+        <div id="evolutionScreen" class="evolution hidden">
+            <h2>¡Tu Pokémon está evolucionando!</h2>
+            <div class="evolution-animation">
+                <canvas id="evolutionCanvas" width="300" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
